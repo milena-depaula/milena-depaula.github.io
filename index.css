@@ -1,5 +1,8 @@
 body {
     background-color: #406bbc;
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
 }
 
 .cabecalho {
@@ -9,6 +12,7 @@ body {
     align-items: center;
     padding: 0 5%;
     height: 100px;
+    margin-bottom: 5%;
 }
 
 .cabecalho h1 {
@@ -30,7 +34,7 @@ body {
     font-family: Arial, sans-serif;
 }
 .caixa {
-    width: 90%;
+    width: 70%;
     background-color: #9cbcc6;
     padding: 15px;
     margin: 20px auto; 
@@ -47,4 +51,10 @@ body {
 
 .caixa p {
     font-size: large;
+}
+
+@media (max-width: 767px) {
+    .caixa {
+        width: 90%;
+    }
 }
